@@ -4,9 +4,8 @@ Get up and running with the Sentinel MITRE Analyzer in 5 minutes!
 
 ---
 
-## ⚡ 5-Minute Setup
 
-### Step 1: Download (30 seconds)
+### Step 1: Download 
 
 ```powershell
 # Clone the repository
@@ -14,7 +13,7 @@ git clone https://github.com/yourusername/sentinel-mitre-analyzer.git
 cd sentinel-mitre-analyzer
 ```
 
-### Step 2: Authenticate (1 minute)
+### Step 2: Authenticate
 
 ```powershell
 # Login to Azure
@@ -24,7 +23,7 @@ Connect-AzAccount
 Set-AzContext -SubscriptionId 'your-subscription-id'
 ```
 
-### Step 3: Run (3 minutes)
+### Step 3: Run
 
 ```powershell
 # Import and run
@@ -133,13 +132,3 @@ Once your first report is complete:
 
 ---
 
-## 📖 Learn More
-
-- [Full Installation Guide](docs/INSTALLATION.md)
-- [API & Permissions](docs/API-REFERENCE.md)
-- [Usage Examples](examples/EXAMPLES.md)
-- [Troubleshooting](README.md#troubleshooting)
-
----
-
-**Questions?** [Open an issue](https://github.com/yourusername/sentinel-mitre-analyzer/issues) on GitHub!
