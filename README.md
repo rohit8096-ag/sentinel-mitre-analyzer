@@ -8,7 +8,7 @@
 
 Analyze your Azure Sentinel analytical rules and generate comprehensive MITRE ATT&CK coverage reports with beautiful visualizations, including interactive radar charts, gap analysis, and executive summaries.
 
-([sentinel-mitre-analyzer/Sentinel Analyzer.png](https://github.com/rohit8096-ag/sentinel-mitre-analyzer/blob/main/Sentinel%20Analyzer.png))
+![Sentinel Analyzer](./Sentinel%20Analyzer.png)
 
 ---
 
