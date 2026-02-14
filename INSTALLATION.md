@@ -64,7 +64,7 @@ Ensure you have **Microsoft Sentinel Reader** role (or higher) on the target wor
 
 ```powershell
 # Clone the repository
-git clone https://github.com/yourusername/sentinel-mitre-analyzer.git
+git clone https://github.com/rohit8096-ag/sentinel-mitre-analyzer.git
 
 # Navigate to the directory
 cd sentinel-mitre-analyzer
