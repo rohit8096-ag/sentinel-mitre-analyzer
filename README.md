@@ -514,49 +514,11 @@ of this software and associated documentation files...
 
 ---
 
-## 👤 Author
+## 👤 Author & Contributor
 
 **Rohit Ashok**
 
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+- GitHub: [@rohit8096-ag](www.linkedin.com/in/rohit-ashokgoud-5b77a0188)
+- LinkedIn: [RohitAshok](www.linkedin.com/in/rohit-ashokgoud-5b77a0188)
+-Contributor @claude
 
----
-
-## 🙏 Acknowledgments
-
-- Microsoft Sentinel team for the excellent security platform
-- MITRE ATT&CK framework for the threat intelligence taxonomy
-- Chart.js for the beautiful visualization library
-- PowerShell community for continuous support
-
----
-
-## 📊 Statistics
-
-![GitHub stars](https://img.shields.io/github/stars/yourusername/sentinel-mitre-analyzer?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/sentinel-mitre-analyzer?style=social)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/sentinel-mitre-analyzer)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/yourusername/sentinel-mitre-analyzer)
-
----
-
-## 🗺️ Roadmap
-
-- [ ] PDF export without external dependencies
-- [ ] Support for Azure Government Cloud
-- [ ] Multi-workspace comparison reports
-- [ ] Scheduled report generation (Azure Automation)
-- [ ] Integration with Microsoft Teams/Slack
-- [ ] Historical trend analysis
-- [ ] Playbook/automation coverage analysis
-
----
-
-## ⭐ Show Your Support
-
-If this tool helps you improve your Sentinel security posture, please give it a ⭐ on GitHub!
-
----
-
-**Made with ❤️ for the Azure Security Community**
