@@ -102,18 +102,6 @@ Import-Module .\SentinelMITREAnalyzer.psm1
 Import-Module C:\Tools\SentinelAnalyzer\SentinelMITREAnalyzer.psm1
 ```
 
-### Method 3: PowerShell Modules Directory
-
-```powershell
-# Copy to your PowerShell modules directory
-$modulePath = "$HOME\Documents\PowerShell\Modules\SentinelMITREAnalyzer"
-New-Item -ItemType Directory -Path $modulePath -Force
-Copy-Item .\SentinelMITREAnalyzer.* -Destination $modulePath
-
-# Import (will auto-load when you call functions)
-Import-Module SentinelMITREAnalyzer
-```
-
 ---
 
 ## ⚡ Quick Start
