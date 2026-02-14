@@ -10,12 +10,12 @@
     
 .NOTES
     Author: Rohit Ashok
-    Version: 2.6.0
-    Date: 2024
+    Version: 0.0.1
+    Date: 2026
 #>
 
 # Global configuration
-$script:Version = "2.6.0"
+$script:Version = "0.0.1"
 $script:Author = "Rohit Ashok"
 $script:ManagementEndpoint = "https://management.azure.com"
 $script:MitreTotalTechniques = 211
