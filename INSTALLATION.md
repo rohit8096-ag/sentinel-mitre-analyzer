@@ -159,31 +159,6 @@ az account show --query user.name -o tsv
 # List role assignments
 az role assignment list --assignee user@domain.com --output table
 ```
-
-### Step 3: Request Access (If Needed)
-
-If you don't have the required permissions:
-
-**Email Template for Azure Admin:**
-```
-Subject: Access Request - Azure Sentinel Workspace
-
-Hi [Admin Name],
-
-I need read access to the Azure Sentinel workspace for security analysis purposes.
-
-Workspace Details:
-- Subscription: [Subscription Name]
-- Resource Group: [RG Name]
-- Workspace: [Workspace Name]
-
-Required Role: Microsoft Sentinel Reader
-
-Purpose: Generate MITRE ATT&CK coverage reports using PowerShell automation
-
-Thank you!
-```
-
 ---
 
 ## Verification
@@ -283,18 +258,6 @@ $proxyUrl = "http://proxy.company.com:8080"
 Install-Module Az -Proxy $proxyUrl -Scope CurrentUser
 ```
 
-### Issue: TLS/SSL Error
-
-**Error:** `The underlying connection was closed: An unexpected error occurred`
-
-**Solution:**
-```powershell
-# Enable TLS 1.2
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-
-# Then retry the installation/import
-```
-
 ---
 
 ## Next Steps
@@ -302,13 +265,3 @@ Install-Module Az -Proxy $proxyUrl -Scope CurrentUser
 Once installed, proceed to the [Quick Start Guide](../README.md#quick-start) to run your first analysis!
 
 ---
-
-## Additional Resources
-
-- [Azure Sentinel Documentation](https://docs.microsoft.com/en-us/azure/sentinel/)
-- [PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)
-- [MITRE ATT&CK Framework](https://attack.mitre.org/)
-
----
-
-**Need Help?** Open an issue on [GitHub Issues](https://github.com/yourusername/sentinel-mitre-analyzer/issues)
