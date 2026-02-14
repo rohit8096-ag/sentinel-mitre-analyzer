@@ -8,7 +8,7 @@
 
 Analyze your Azure Sentinel analytical rules and generate comprehensive MITRE ATT&CK coverage reports with beautiful visualizations, including interactive radar charts, gap analysis, and executive summaries.
 
-![Sentinel Analyzer Banner](docs/images/banner.png)
+![Sentinel Analyzer Banner](Sentinel Analyzer.png)
 
 ---
 
@@ -23,7 +23,6 @@ Analyze your Azure Sentinel analytical rules and generate comprehensive MITRE AT
 - [Azure Permissions](#-azure-permissions)
 - [Examples](#-examples)
 - [Troubleshooting](#-troubleshooting)
-- [Contributing](#-contributing)
 - [License](#-license)
 - [Author](#-author)
 
@@ -53,7 +52,6 @@ Analyze your Azure Sentinel analytical rules and generate comprehensive MITRE AT
 
 ### 💾 **Export Options**
 - ✅ Professional HTML reports (saved to Downloads folder)
-- ✅ PDF export support (requires wkhtmltopdf or Chrome)
 - ✅ Print-optimized styling
 
 ---
@@ -78,9 +76,6 @@ Your Azure account must have **one** of these roles on the Sentinel workspace:
 | **Microsoft Sentinel Contributor** | Workspace | Full access to Sentinel resources |
 | **Reader** | Subscription/RG | Alternative: Read access at higher scope |
 
-### Optional (for PDF export)
-- **wkhtmltopdf** (recommended) OR
-- **Google Chrome/Chromium** (auto-detected)
 
 ---
 
@@ -90,7 +85,7 @@ Your Azure account must have **one** of these roles on the Sentinel workspace:
 
 ```powershell
 # Clone the repository
-git clone https://github.com/yourusername/sentinel-mitre-analyzer.git
+git clone https://github.com/rohit8096-ag/sentinel-mitre-analyzer.git
 cd sentinel-mitre-analyzer
 
 # Import the module
@@ -179,25 +174,6 @@ Get-SentinelAnalyticalRulesReport `
     -ResourceGroup 'my-sentinel-rg' `
     -WorkspaceName 'my-sentinel-workspace' `
     -ExportHtml
-```
-
-### Advanced Usage
-
-```powershell
-# Capture results for programmatic access
-$report = Get-SentinelAnalyticalRulesReport -ExportHtml
-
-# Access the data
-Write-Host "Total Rules: $($report.Rules.Count)"
-Write-Host "Enabled: $($report.Enabled.Count)"
-Write-Host "Disabled: $($report.Disabled.Count)"
-Write-Host "Report saved to: $($report.HtmlPath)"
-
-# Analyze specific data
-$highSevDisabled = $report.Disabled | 
-    Where-Object { $_.properties.severity -eq 'High' }
-
-Write-Host "High-severity disabled rules: $($highSevDisabled.Count)"
 ```
 
 ---
@@ -357,26 +333,6 @@ $criticalDisabled |
     Export-Csv 'Critical_Disabled_Rules.csv' -NoTypeInformation
 ```
 
-### Example 4: Compare Coverage Across Workspaces
-
-```powershell
-# Production workspace
-$prod = Get-SentinelAnalyticalRulesReport `
-    -SubscriptionId 'xxx' `
-    -ResourceGroup 'prod-rg' `
-    -WorkspaceName 'prod-sentinel'
-
-# Development workspace
-$dev = Get-SentinelAnalyticalRulesReport `
-    -SubscriptionId 'xxx' `
-    -ResourceGroup 'dev-rg' `
-    -WorkspaceName 'dev-sentinel'
-
-# Compare coverage
-Write-Host "Production Coverage: $($prod.Enabled.Count) enabled rules"
-Write-Host "Development Coverage: $($dev.Enabled.Count) enabled rules"
-```
-
 ---
 
 ## 🔧 Troubleshooting
@@ -472,31 +428,6 @@ Import-Module Az
 # Verify installation
 Get-Module Az -ListAvailable
 ```
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-### Reporting Issues
-- Use the [GitHub Issues](https://github.com/yourusername/sentinel-mitre-analyzer/issues) page
-- Include PowerShell version, OS, and error messages
-- Provide steps to reproduce the issue
-
-### Submitting Pull Requests
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-### Code Style Guidelines
-- Follow PowerShell best practices
-- Use clear, descriptive variable names
-- Add comments for complex logic
-- Test with PowerShell 5.1 and 7.x
-
 ---
 
 ## 📄 License
