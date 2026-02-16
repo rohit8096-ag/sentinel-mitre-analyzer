@@ -420,7 +420,8 @@ Get-Module Az -ListAvailable
 ---
 
 ## 📸 Reference
-![Sentinel Analyzer](./RadarChart.png)![Sentinel Analyzer](./Detection%20Analysis.png)![Sentinel Analyzer](./MITRE%20Tactic20%summary.png)![Sentinel Analyzer](./Summary.png)
+![Sentinel Analyzer](./RadarChart.png)![Sentinel Analyzer](./Detection%20Analysis.png)![Sentinel Analyzer](./MITRE%20Tactic%20summary.png)
+![Sentinel Analyzer](./Summary.png)
 ---
 
 ## 📄 License
