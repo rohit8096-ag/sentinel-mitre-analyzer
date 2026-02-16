@@ -23,6 +23,7 @@ Analyze your Azure Sentinel analytical rules and generate comprehensive MITRE AT
 - [Azure Permissions](#-azure-permissions)
 - [Examples](#-examples)
 - [Troubleshooting](#-troubleshooting)
+- [Reference Report ScreenShots](#-Reference)
 - [License](#-license)
 - [Author](#-author)
 
@@ -416,6 +417,10 @@ Import-Module Az
 # Verify installation
 Get-Module Az -ListAvailable
 ```
+---
+
+## 📸 Reference
+![Sentinel Analyzer](./RadarChart.png)![Sentinel Analyzer](./Detection%20Analysis.png)![Sentinel Analyzer](./MITRE%20Tactic20%summary.png)![Sentinel Analyzer](./Summary.png)
 ---
 
 ## 📄 License
